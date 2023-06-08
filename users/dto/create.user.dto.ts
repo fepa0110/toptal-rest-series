@@ -1,3 +1,5 @@
+import { CreateBookDto } from "./create.book.dto";
+
 export interface CreateUserDto {
     id: string;
     email: string;
@@ -5,4 +7,5 @@ export interface CreateUserDto {
     firstName?: string;
     lastName?: string;
     permissionLevel?: number;
+    books: CreateBookDto[];
 }
