@@ -1,0 +1,10 @@
+#!/bin/bash
+
+case "$1" in
+    up ) echo "Levantando mongoDB.."
+        docker-compose up -d
+        ;;
+    down ) echo "Deteniendo mongoDB.."
+        docker-compose down
+        ;;
+esac
